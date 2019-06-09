@@ -82,6 +82,7 @@ blockquote h3 {
 
 .CodeMirror {
   height: 300px;
+  font-size: 1.2em;
 }
 
 .grid-two {
