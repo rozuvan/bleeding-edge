@@ -43,9 +43,13 @@ blockquote {
   font-family: "AveriaSansLibreItalic";
   background: #f9f9f9;
   border-left: 0.75em solid #ccc;
-  margin: 1.5em 4.5em 1.5em 4.5em;
+  margin: 1.5em 0 1.5em 0;
   padding: 0.5em 0.75em;
   quotes: "\201C""\201D""\2018""\2019";
+
+  -moz-box-shadow: 10px 0px 10px 1px #ccc;
+  -webkit-box-shadow: 10px 0px 10px 1px #ccc;
+  box-shadow: 10px 0px 10px 1px #ccc;
 }
 
 blockquote:before {
