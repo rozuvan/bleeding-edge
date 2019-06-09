@@ -48,16 +48,25 @@
 
   function getEmail() {
     var eMailLetters = [
-      'v', 'a', 'l', 'e', 'r', 'a', // UIgyu.63t7^**YO
-      '.', // ^&*UO5t@73.u4^R%%&I$6 7 t 76R% ^
-      'r', 'o', 'z', 'u', 'v', 'a', 'n', // %$^*&.()
-      '@', //   7 &&*  66.  6 67786 ^$@#@#$.%^*
-      'g', 'm', 'a', 'i', 'l', // // # @@ /
-      '.', /* sjfhf 79 *@  &*879 3467. ^%^&^%&*  */
-      'c', 'o', 'm' // @@@.
+      'v', 'j', 'a', 'q', 'l', 'n', 'e', 'u', 'r', 'c', 'a', 'o', // UIgyu.63t7^**YO
+      '.', '4', // ^&*UO5t@73.u4^R%%&I$6 7 t 76R% ^
+      'r', 'k', 'o', 'e', 'z', '7', 'u', '2', 'v', 'f', 'a', ',', 'n', '5', // %$^*&.()
+      '@', 'j', //   7 &&*  66.  6 67786 ^$@#@#$.%^*
+      'g', 's', 'm', 'j', 'a', '7', 'i', 'c', 'l', '9', // // # @@ /
+      '.', 'l', /* sjfhf 79 *@  &*879 3467. ^%^&^%&*  */
+      'c', 'd', 'o', 'j', 'm', '2' // @@@.
     ];
 
-    return eMailLetters.join('');
+    var eMailLettersActual = [];
+    var c;
+
+    for (c = 0; c < eMailLetters.length; c += 1) {
+      if (c % 2 === 0) {
+        eMailLettersActual.push(eMailLetters[c]);
+      }
+    }
+
+    return eMailLettersActual.join('');
   }
 
   function init() {
@@ -73,7 +82,7 @@
     scene.background = new THREE.Color(0xe2e1e0);
 
     var loader = new THREE.FontLoader();
-    loader.load('data/helvetiker_regular.typeface.json', function (font) {
+    loader.load('/data/helvetiker_regular.typeface.json', function (font) {
 
       var xMid, text, i;
 
