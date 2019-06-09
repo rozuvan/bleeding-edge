@@ -48,14 +48,15 @@
 
 .archive-list li {
     list-style-type: none;
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
 }
 
 .archive-list li .date {
     opacity: 0.5;
     margin-left: 10px;
     font-size: 0.9em;
+    white-space: nowrap;
 }
 
 .archive-list li.hidden {
