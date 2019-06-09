@@ -12,6 +12,16 @@ body {
 
 .container {
   flex: 1 0 auto;
+  margin-bottom: 1.8em;
+}
+
+.container::after {
+  content: "&#9883;&#9883;&#9883;&#9883;&#9883;";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5em;
 }
 
 .footer {
@@ -21,6 +31,10 @@ body {
 }
 
 .footer a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: black;
   border-bottom: 0.1em solid black;
 }
 
