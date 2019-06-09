@@ -66,8 +66,8 @@ p {
 }
 
 p.end_stars {
-  text-align: center;
-  margin-bottom: 2.5em;
+  margin: 1.1em 0 0.5em 0;
+  padding: 0;
 }
 
 blockquote {
