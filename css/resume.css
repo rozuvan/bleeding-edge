@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.header {
+.container.header {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
