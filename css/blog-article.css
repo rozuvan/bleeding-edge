@@ -65,6 +65,11 @@ p {
   text-indent: 2.4em;
 }
 
+p.end_stars {
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
 blockquote {
   font-family: "AveriaSansLibreItalic";
   background: #f9f9f9;
