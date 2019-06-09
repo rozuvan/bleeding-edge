@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <!--
+    "Remember, the web isn't about control. If a visitor to your site
+    is familiar with using a browser's native form doodad, you won't
+    be doing them any favors if you override the browser functionality
+    with your own widget, even if you think your widget looks better."
+
+    ~ Jeremy Keith
+  -->
+
+  <meta charset="utf-8" />
+  <meta name="description" content="First test of blog's new theme | Blog | Valera Rozuvan" />
+  <meta name="author" content="Valera Rozuvan" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+
+  <title>First test of blog's new theme</title>
+
+  <link rel="stylesheet" href="/css/reset.css?v=1.0" />
+  <link rel="stylesheet" href="/css/fonts.css?v=1.0" />
+
+  <link rel="stylesheet" href="/css/vendor/codemirror/codemirror.css?v=1.0" />
+  <link rel="stylesheet" href="/css/vendor/codemirror/ambiance.css?v=1.0" />
+  <link rel="stylesheet" href="/css/vendor/baguette-box/baguette-box.css?v=1.0" />
+
+  <link rel="stylesheet" href="/css/blog-article.css?v=1.0" />
+
+</head>
+<body>
+        <h1>JavaScript &amp; The Game of Life</h1>
+
+        <h2 class="no-btm-padd">part of <a href="https://bleeding-edge.rozuvan.net/blog/">bleeding-edge.rozuvan.net/blog</a></h2>
+        <h2 class="no-btm-padd">keywords: <a href="#">javascript</a>, <a href="#">game of life</a></h2>
+        <h2>June 06, 2019</h2>
+
+        <p>Ever since its publication, Conway's Game of Life has attracted much interest, because of the surprising ways in which the patterns can evolve. Life provides an example of emergence and self-organization. Scholars in various fields, such as computer science, physics, biology, biochemistry, economics, mathematics, philosophy, and generative sciences have made use of the way that complex patterns can emerge from the implementation of the game's simple rules[citation needed]. The game can also serve as a didactic analogy, used to convey the somewhat counterintuitive notion that "design" and "organization" can spontaneously emerge in the absence of a designer. For example, philosopher and cognitive scientist Daniel Dennett has used the analogue of Conway's Life "universe" extensively to illustrate the possible evolution of complex philosophical constructs, such as consciousness and free will, from the relatively simple set of deterministic physical laws, which might govern our universe.[4][5][6]</p>
+
+        <blockquote>
+            <p>On May 18, 2010, Andrew J. Wade announced a self-constructing pattern dubbed Gemini which creates a copy of itself while destroying its parent.[25][26] This pattern replicates in 34 million generations, and uses an instruction tape made of gliders which oscillate between two stable configurations made of Chapman-Greene construction arms. These, in turn, create new copies of the pattern, and destroy the previous copy. Gemini is also a spaceship, and is in fact the first spaceship constructed in the Game of Life which is neither orthogonal nor purely diagonal (these are called knightships).[27][28]</p>
+
+            <h3>&lt;origin&gt; <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life"> Wikipedia | Conway's Game of Life</a></h3>
+        </blockquote>
+
+        <p>The earliest interesting patterns in the Game of Life were discovered without the use of computers. The simplest static patterns ("still lifes") and repeating patterns ("oscillators"—a superset of still lifes) were discovered while tracking the fates of various small starting configurations using graph paper, blackboards, physical game boards (such as Go) and the like. During this early research, Conway discovered that the R-pentomino failed to stabilize in a small number of generations. In fact, it takes 1103 generations to stabilize, by which time it has a population of 116 and has fired six escaping gliders[10] (these were the first gliders ever discovered).[11]</p>
+
+        <div class="codeblock">
+            <textarea id="code-one">var a = [34, 203, 3, 746, 200, 984, 198, 764, 9];
+
+function bubbleSort(a)
+{
+    var swapped;
+    do {
+        swapped = false;
+        for (var i=0; i < a.length-1; i++) {
+            if (a[i] > a[i+1]) {
+                var temp = a[i];
+                a[i] = a[i+1];
+                a[i+1] = temp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+}
+
+bubbleSort(a);
+console.log(a);
+</textarea>
+        </div>
+
+        <p>Conway originally conjectured that no pattern can grow indefinitely—i.e., that for any initial configuration with a finite number of living cells, the population cannot grow beyond some finite upper limit. In the game's original appearance in "Mathematical Games", Conway offered a $50 prize to the first person who could prove or disprove the conjecture before the end of 1970. The prize was won in November of the same year by a team from the Massachusetts Institute of Technology, led by Bill Gosper; the "Gosper glider gun" produces its first glider on the 15th generation, and another glider every 30th generation from then on. For many years this glider gun was the smallest one known.[19] In 2015 a period-120 gun was discovered that has fewer live cells but a larger bounding box.[20]</p>
+
+        <p>It is possible for gliders to interact with other objects in interesting ways. For example, if two gliders are shot at a block in just the right way, the block will move closer to the source of the gliders. If three gliders are shot in just the right way, the block will move farther away. This "sliding block memory" can be used to simulate a counter. It is possible to construct logic gates such as AND, OR and NOT using gliders. It is possible to build a pattern that acts like a finite state machine connected to two counters. This has the same computational power as a universal Turing machine, so the Game of Life is theoretically as powerful as any computer with unlimited memory and no time constraints: it is Turing complete.[2][3]</p>
+
+        <div class="gallery grid-two">
+            <a href="img/2-1.jpg" class="col-one">
+                <img src="img/thumbs/2-1.jpg" alt="First image">
+            </a>
+            <a href="img/2-2.jpg" class="col-two">
+                <img src="img/thumbs/2-2.jpg" alt="Second image">
+            </a>
+        </div>
+
+        <p>Furthermore, a pattern can contain a collection of guns that fire gliders in such a way as to construct new objects, including copies of the original pattern. A "universal constructor" can be built which contains a Turing complete computer, and which can build many types of complex objects, including more copies of itself.[3]</p>
+
+  <script type="text/javascript" src="/js/vendor/codemirror/codemirror.js"></script>
+  <script type="text/javascript" src="/js/vendor/codemirror/codemirror-javascript.js"></script>
+  <script type="text/javascript" src="/js/vendor/baguette-box/baguette-box.js"></script>
+
+  <!-- Local JS script specifically for this page. Stored along-side this index.html file. -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
