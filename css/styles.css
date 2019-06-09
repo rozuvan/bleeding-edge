@@ -90,3 +90,9 @@ a {
 .header a, .footer a {
   border-bottom: 0.1em solid black;
 }
+
+@media (min-width:1127px) {
+  .header.hide_wide_screen {
+    display: none;
+  }
+}
