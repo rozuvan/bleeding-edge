@@ -1,7 +1,33 @@
+html, body {
+  height: 100%;
+}
+
 body {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1 0 auto;
+  margin-bottom: 1.8em;
+}
+
+.footer {
+  flex-shrink: 0;
+  height: 3em;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.footer a, .footer a:visited, .footer a:hover, .footer a:active, .footer a:link {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: black;
+  border-bottom: 0.1em solid black;
 }
 
 h1 {
@@ -37,6 +63,11 @@ p {
   padding-top: 0.4em;
   padding-bottom: 0.4em;
   text-indent: 2.4em;
+}
+
+p.end_stars {
+  margin: 1.1em 0 0.5em 0;
+  padding: 0;
 }
 
 blockquote {
