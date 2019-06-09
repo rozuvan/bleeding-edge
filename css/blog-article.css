@@ -15,22 +15,14 @@ body {
   margin-bottom: 1.8em;
 }
 
-.container::after {
-  content: "&#9883;&#9883;&#9883;&#9883;&#9883;";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 0.5em;
-}
-
 .footer {
   flex-shrink: 0;
   height: 3em;
   font-size: 1.2em;
+  text-align: center;
 }
 
-.footer a {
+.footer a, .footer a:visited, .footer a:hover, .footer a:active, .footer a:link {
   text-decoration: none;
   outline: none;
   border: none;
