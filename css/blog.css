@@ -2,18 +2,17 @@
 
 .site-articles {
     text-align: left;
-    margin-top: 100px;
-    padding: 0 15px;
+    padding: 1em 1em;
 }
 
 .archive-search input {
-    font-size: 0.95em;
+    font-size: 1em;
 }
 
 .site-articles > article {
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1em;
     word-break: break-word;
     line-height: 1.58;
     color: rgba(0, 0, 0, 0.8);
@@ -21,7 +20,6 @@
 
 .article-body ul {
     margin: 0;
-    margin-bottom: 16px;
 }
 
 .article-body a {
@@ -52,13 +50,13 @@
 
 .archive-list li {
     list-style-type: none;
-    margin-top: 0.7em;
-    margin-bottom: 0.7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .archive-list li .date {
     opacity: 0.5;
-    margin-left: 10px;
+    margin-left: 0.5em;
     font-size: 0.9em;
     white-space: nowrap;
 }
