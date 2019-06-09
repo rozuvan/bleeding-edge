@@ -38,7 +38,7 @@ function initArchive() {
     }
 
     var entry_index_ascending = function(a, b) {
-        return parseInt(a.dataset.index) - parseInt(b.dataset.index);
+        return -1 * (parseInt(a.dataset.index) - parseInt(b.dataset.index));
     }
 
     var archive       = window.archive = {};
