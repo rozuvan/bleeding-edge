@@ -116,7 +116,7 @@ blockquote h3 {
 }
 
 .CodeMirror {
-  height: 15em;
+  height: auto;
   font-size: 1.2em;
 }
 
