@@ -13,8 +13,8 @@ ready(function () {
     mode:  'javascript'
   });
 
-  editor.display.wrapper.style.height = '300px';
-  editor.display.wrapper.style.fontSize = '1.1em';
+  editor.display.wrapper.style.height = '400px';
+  editor.display.wrapper.style.fontSize = '1.2em';
   editor.refresh();
 
   baguetteBox.run('.gallery');
