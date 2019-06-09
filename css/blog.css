@@ -6,6 +6,10 @@
     padding: 0 15px;
 }
 
+.archive-search input {
+    font-size: 0.95em;
+}
+
 .site-articles > article {
     font-weight: 400;
     font-style: normal;
