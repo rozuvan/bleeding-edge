@@ -146,6 +146,7 @@
 }
 
 .archive-list li.hidden {
+    display: inline;
     opacity: 0.5;
 }
 
