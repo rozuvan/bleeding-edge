@@ -1,0 +1,154 @@
+/* Articles */
+
+.site-articles {
+    text-align: left;
+    margin-top: 100px;
+    padding: 0 15px;
+}
+.site-articles > article {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    word-break: break-word;
+    line-height: 1.58;
+    color: rgba(0, 0, 0, 0.8);
+}
+.site-articles > article:not(:last-child):after {
+    content: "✽✽✽";
+    display: block;
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 15px;
+    color: #666666;
+}
+.site-articles > article:not(:last-child) {
+    margin-bottom: 35px;
+}
+.site-articles > article > h1 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+.site-articles > article > h1 > a  {
+    color: black;
+    text-decoration: none;
+    border-bottom: 0;
+}
+.site-articles > article > .last-updated {
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    top: -10px;
+    margin-bottom: 10px;
+}
+
+.article-body h2 {
+    margin-bottom: 10px;
+}
+.article-body h3 {
+    margin-bottom: 10px;
+}
+.article-body h4 {
+    margin-bottom: 10px;
+}
+.article-body p, .article-body ul {
+    margin: 0;
+    margin-bottom: 16px;
+}
+.article-body img {
+    max-width: 100%;
+    padding: 8px;
+    margin: 0 auto;
+    display: block;
+}
+.article-body center {
+    padding-bottom: 16px;
+}
+.article-body iframe {
+    max-width: 100%;
+}
+.article-body img.post-icon {
+    padding-left: 0;
+}
+.article-body pre.lotsofcode {
+    height: 310px;
+}
+.article-body .c,
+.article-body .center-aligner {
+    text-align: center;
+}
+.article-body a {
+    color: #0060a0;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,96,160,0.15);
+}
+.article-body a:visited {
+    color: #70a0b0;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(112, 160, 176, 0.15);
+}
+.article-body a:hover {
+    color: #b03000;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(176, 48, 0, 0.15);
+}
+.article-body a.nohover {
+    border-bottom: 0;
+}
+
+.article-navigation {
+    margin-top: 24px;
+    font-size: 0;
+}
+
+.article-navigation .go {
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: top;
+    width: 50%;
+    position: relative;
+}
+.article-navigation .go.back {
+    padding-left: 22px;
+    padding-right: 8px;
+}
+.article-navigation .go.forward {
+    text-align: right;
+    padding-right: 22px;
+    padding-left: 8px;
+}
+.article-navigation .go.back a:before {
+    content: "←";
+    position: absolute;
+    font-size: 18px;
+    line-height: 22px;
+    left: 0;
+}
+.article-navigation .go.forward a:before {
+    content: "→";
+    position: absolute;
+    font-size: 18px;
+    line-height: 22px;
+    right: 0;
+}
+
+.archive-list {
+    padding-left: 0;
+}
+
+.archive-list li {
+    list-style-type: none;
+}
+.archive-list li .date {
+    opacity: 0.5;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.archive-list li.hidden {
+    opacity: 0.5;
+}
+
+.archive-list li.hidden .date {
+    opacity: 0.3;
+}
