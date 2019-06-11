@@ -37,7 +37,7 @@ h1 {
   font-style: normal;
   text-align: center;
   padding-top: 0.8em;
-  padding-bottom: 0.1m;
+  padding-bottom: 0.1em;
 }
 
 h2 {
@@ -177,7 +177,11 @@ a.cite_ref {
   white-space: nowrap;
   font-weight: normal;
   font-style: normal;
-  font-size: 80%;
+  font-size: 70%;
+  font-family: "SpecialElite";
+  letter-spacing: 0.15em;
+  border-bottom: 0;
+  text-decoration: none;
 }
 
 ol.citations {
