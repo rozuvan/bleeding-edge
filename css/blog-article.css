@@ -169,3 +169,24 @@ a:visited {
 a:hover {
   color: #0651A1;
 }
+
+a.cite_ref {
+  vertical-align: super;
+  line-height: 1;
+  unicode-bidi: isolate;
+  white-space: nowrap;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 80%;
+}
+
+ol.citations {
+  list-style: decimal;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+}
+
+ol.citations li {
+  margin-bottom: 0.3em;
+}
