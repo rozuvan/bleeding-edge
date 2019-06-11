@@ -54,10 +54,14 @@
     margin-bottom: 1em;
 }
 
+.archive-list li .title {
+  font-size: 2em;
+}
+
 .archive-list li .date {
     opacity: 0.5;
     margin-left: 0.5em;
-    font-size: 0.9em;
+    font-size: 1em;
     white-space: nowrap;
 }
 
