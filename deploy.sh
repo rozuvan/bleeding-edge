@@ -29,8 +29,6 @@ cd $GH_PAGES_PATH
 rm -rf *
 cp --recursive "${WORKING_DIR}"/build/* .
 git checkout CNAME
-git checkout robots.txt
-
 
 # Fourth, deploy if 3rd param to shell script is `true`.
 if [ "${DEPLOY_REQUIRED}" == "true" ]; then
