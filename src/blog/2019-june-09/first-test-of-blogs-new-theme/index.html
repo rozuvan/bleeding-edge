@@ -42,11 +42,15 @@
     <h2>June 09, 2019</h2>
 
     <p>
-      <em>Dear reader, please note:</em> the text in this sample blog entry is taken fully from Wikipedia, the free encyclopedia. You can browse the original at <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life</a>.
+      The purpose of this entry is to show various content and how it looks using the new CSS styling for blog entries. Text, quotations, images, blocks of code. As time will go by, I will update this page to include new types of content. Mostly, this will serve me as a reference card of what I can do here ;)
     </p>
 
     <p>
-      Ever since its publication, Conway's Game of Life has attracted much interest, because of the surprising ways in which the patterns can evolve. Life provides an example of emergence and self-organization. Scholars in various fields, such as computer science, physics, biology, biochemistry, economics, mathematics, philosophy, and generative sciences have made use of the way that complex patterns can emerge from the implementation of the game's simple rules. The game can also serve as a didactic analogy, used to convey the somewhat counterintuitive notion that "design" and "organization" can spontaneously emerge in the absence of a designer. For example, philosopher and cognitive scientist Daniel Dennett has used the analogue of Conway's Life "universe" extensively to illustrate the possible evolution of complex philosophical constructs, such as consciousness and free will, from the relatively simple set of deterministic physical laws, which might govern our universe.<a class="cite_ref" href="#cite_note_1">[1]</a><a class="cite_ref" href="#cite_note_2">[2]</a><a class="cite_ref" href="#cite_note_3">[3]</a>
+      <em>Dear reader, please note:</em> the text below is taken fully from Wikipedia, the free encyclopedia. You can browse the original at <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life</a>.
+    </p>
+
+    <p>
+      Ever since its publication, Conway's Game of Life has attracted much interest, because of the surprising ways in which the patterns can evolve. Life provides an example of emergence and self-organization. Scholars in various fields, such as computer science, physics, biology, biochemistry, economics, mathematics, philosophy, and generative sciences have made use of the way that complex patterns can emerge from the implementation of the game's simple rules. The game can also serve as a didactic analogy, used to convey the somewhat counter intuitive notion that "design" and "organization" can spontaneously emerge in the absence of a designer. For example, philosopher and cognitive scientist Daniel Dennett has used the analogue of Conway's Life "universe" extensively to illustrate the possible evolution of complex philosophical constructs, such as consciousness and free will, from the relatively simple set of deterministic physical laws, which might govern our universe.<a class="cite_ref" href="#cite_note_1">[1]</a><a class="cite_ref" href="#cite_note_2">[2]</a><a class="cite_ref" href="#cite_note_3">[3]</a>
     </p>
 
     <blockquote>
@@ -60,29 +64,22 @@
     </blockquote>
 
     <p>
-      The earliest interesting patterns in the Game of Life were discovered without the use of
-      computers. The simplest static patterns ("still lifes") and repeating patterns
-      ("oscillators" — a superset of still lifes) were discovered while tracking the fates of various
-      small starting configurations using graph paper, blackboards, physical game boards (such as Go)
-      and the like. During this early research, Conway discovered that the R-pentomino failed to
-      stabilize in a small number of generations. In fact, it takes 1103 generations to stabilize,
-      by which time it has a population of 116 and has fired six escaping gliders[10] (these were
-      the first gliders ever discovered).[11]
+      The earliest interesting patterns in the Game of Life were discovered without the use of computers. The simplest still lifes and oscillators were discovered while tracking the fates of various small starting configurations using graph paper, blackboards, and physical game boards, such as those used in Go. During this early research, Conway discovered that the R-pentomino failed to stabilize in a small number of generations. In fact, it takes 1103 generations to stabilize, by which time it has a population of 116 and has generated six escaping gliders;<a class="cite_ref" href="#cite_note_9">[9]</a> these were the first spaceships ever discovered.<a class="cite_ref" href="#cite_note_10">[10]</a>
     </p>
 
     <div class="codeblock">
-      <textarea id="code-one">var a = [34, 203, 3, 746, 200, 984, 198, 764, 9];
+      <textarea id="code-one">let a = [34, 203, 3, 746, 200, 984, 198, 764, 9];
 
 function bubbleSort(a)
 {
-    var swapped;
+    let swapped;
     do {
         swapped = false;
-        for (var i=0; i < a.length-1; i++) {
-            if (a[i] > a[i+1]) {
-                var temp = a[i];
-                a[i] = a[i+1];
-                a[i+1] = temp;
+        for (let i = 0; i < a.length - 1; i += 1) {
+            if (a[i] > a[i + 1]) {
+                let temp = a[i];
+                a[i] = a[i + 1];
+                a[i + 1] = temp;
                 swapped = true;
             }
         }
@@ -95,26 +92,7 @@ console.log(a);
     </div>
 
     <p>
-      Conway originally conjectured that no pattern can grow indefinitely—i.e., that for any initial
-      configuration with a finite number of living cells, the population cannot grow beyond some finite
-      upper limit. In the game's original appearance in "Mathematical Games", Conway offered a $50
-      prize to the first person who could prove or disprove the conjecture before the end of 1970.
-      The prize was won in November of the same year by a team from the Massachusetts Institute of Technology,
-      led by Bill Gosper; the "Gosper glider gun" produces its first glider on the 15th generation,
-      and another glider every 30th generation from then on. For many years this glider gun was the
-      smallest one known.[19] In 2015 a period-120 gun was discovered that has fewer live cells but
-      a larger bounding box.[20]
-    </p>
-
-    <p>
-      It is possible for gliders to interact with other objects in interesting ways. For example, if two
-      gliders are shot at a block in just the right way, the block will move closer to the source of
-      the gliders. If three gliders are shot in just the right way, the block will move farther away.
-      This "sliding block memory" can be used to simulate a counter. It is possible to construct logic
-      gates such as AND, OR and NOT using gliders. It is possible to build a pattern that acts like
-      a finite state machine connected to two counters. This has the same computational power as
-      a universal Turing machine, so the Game of Life is theoretically as powerful as any computer
-      with unlimited memory and no time constraints: it is Turing complete.[2][3]
+      Conway's rules may also be generalized such that instead of two states, live and dead, there are three or more. State transitions are then determined either by a weighting system or by a table specifying separate transition rules for each state; for example, Mirek's Cellebration's multi-colored Rules Table and Weighted Life rule families each include sample rules equivalent to Conway's Life.
     </p>
 
     <div class="gallery grid-two">
@@ -127,10 +105,7 @@ console.log(a);
     </div>
 
     <p>
-      Furthermore, a pattern can contain a collection of guns that fire gliders in such a way as to
-      construct new objects, including copies of the original pattern. A "universal constructor" can
-      be built which contains a Turing complete computer, and which can build many types of complex
-      objects, including more copies of itself.[3]
+      There are now thousands of Life programs online, so a full list will not be provided here. The following is a small selection of programs with some special claim to notability, such as popularity or unusual features. Most of these programs incorporate a graphical user interface for pattern editing and simulation, the capability for simulating multiple rules including Life, and a large library of interesting patterns in Life and other CA rules.
     </p>
 
     <ol class="citations">
@@ -147,29 +122,38 @@ console.log(a);
         New York: Penguin Books. ISBN 978-0-14-200384-8.
       </li>
       <li id="cite_note_4">
-         <a href="http://conwaylife.com/forums/viewtopic.php?f=2&t=399&p=2327#p2327">
-           "Universal Constructor Based Spaceship".
-         </a>
-         Conwaylife.com. Retrieved 2012-06-24.
+        <a href="http://conwaylife.com/forums/viewtopic.php?f=2&t=399&p=2327#p2327">
+          "Universal Constructor Based Spaceship".
+        </a>
+        Conwaylife.com. Retrieved 2012-06-24.
       </li>
       <li id="cite_note_5">
-         <a href="http://conwaylife.com/wiki/index.php?title=Gemini">"Gemini – LifeWiki".</a>
-         Conwaylife.com. Retrieved 2012-06-24.
+        <a href="http://conwaylife.com/wiki/index.php?title=Gemini">"Gemini – LifeWiki".</a>
+        Conwaylife.com. Retrieved 2012-06-24.
       </li>
       <li id="cite_note_6">
-         Aron, Jacob (16 June 2010).
-         <a href="https://www.newscientist.com/article/mg20627653.800-first-replicating-creature-spawned-in-life-simulator.html">
-           "First replicating creature spawned in life simulator".
-         </a>
-         New Scientist. Retrieved 12 October 2013.
+        Aron, Jacob (16 June 2010).
+        <a href="https://www.newscientist.com/article/mg20627653.800-first-replicating-creature-spawned-in-life-simulator.html">
+          "First replicating creature spawned in life simulator".
+        </a>
+        New Scientist. Retrieved 12 October 2013.
       </li>
       <li id="cite_note_7">
-         <a href="http://www.conwaylife.com/wiki/Types_of_spaceships#Knightship">"Knightship".</a>
-         Conwaylife.com. Retrieved 2013-10-16.
+        <a href="http://www.conwaylife.com/wiki/Types_of_spaceships#Knightship">"Knightship".</a>
+        Conwaylife.com. Retrieved 2013-10-16.
       </li>
       <li id="cite_note_8">
-         <a href="http://www.conwaylife.com/wiki/Demonoid">"Demonoid".</a>
-         Conwaylife.com. Retrieved 18 June 2016.
+        <a href="http://www.conwaylife.com/wiki/Demonoid">"Demonoid".</a>
+        Conwaylife.com. Retrieved 18 June 2016.
+      </li>
+      <li id="cite_note_9">
+        <a href="http://www.conwaylife.com/wiki/index.php?title=R-pentomino">"R-pentomino".</a>
+        Conwaylife.com. Retrieved July 12, 2009.
+      </li>
+      <li id="cite_note_10">
+        Stephen A. Silver.
+        <a href="http://www.conwaylife.com/ref/lexicon/lex_g.htm#glider">Glider.</a>
+        Conwaylife.com. Retrieved March 4, 2019.
       </li>
     </ol>
 
